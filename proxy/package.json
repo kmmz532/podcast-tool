@@ -1,0 +1,15 @@
+{
+  "name": "podcast-proxy",
+  "private": true,
+  "type": "module",
+  "description": "Podcast アプリ用の CORS プロキシ（Cloudflare Workers / Node）",
+  "scripts": {
+    "local": "node local.ts",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.3"
+  }
+}

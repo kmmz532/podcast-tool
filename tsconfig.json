@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "esnext",
+    "types": ["vite/client", "node", "vite-plugin-pwa/react", "vitest/config"],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    // pevenmui は、親（pevenmui の中の template-app として開発するとき）を先に探し、なければ自分の submodule
+    "paths": {
+      "pevenmui": ["../src/index.ts", "./pevenmui/src/index.ts"],
+      "pevenmui/web": ["../src/web/index.ts", "./pevenmui/src/web/index.ts"],
+      "pevenmui/pwa": ["../src/pwa/index.ts", "./pevenmui/src/pwa/index.ts"]
+    },
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src", "vite.config.ts"]
+}
