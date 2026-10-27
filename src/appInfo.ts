@@ -3,7 +3,7 @@ export const APP_INFO = {
   name: 'Podcast',
   description: 'An offline-ready podcast player that runs entirely in your browser',
   author: 'kmmz1127',
-  repository: 'https://github.com/kmmz1127/podcast-tool',
+  repository: 'https://github.com/kmmz532/podcast-tool',
   site: 'https://kmmz.jp/podcast-tool/',
   lang: 'ja_jp',
 };
